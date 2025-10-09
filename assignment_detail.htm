@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assig_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="./assig_files/jquery.min.js.download"></script>
+    <script src="./assig_files/popper.min.js.download" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./assig_files/bootstrap.min.js.download" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./assig_files/css2" rel="stylesheet">
+    
+    <script type="text/javascript" src="./assig_files/smoothScroll.js.download"></script>
+    <script src="./assig_files/countdown.js.download" defer=""></script>
+    <link href="./assig_files/prism.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assig_files/styles.css">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1256.0" data-gr-ext-installed="">
+    <a name="top"></a>
+    <div class="container">
+        <div class="wrap">
+            <img src="./assig_files/uwo.png" alt="UWO" style="width: 450px; margin: 50px auto 0px;">
+            
+         
+<div class="title">
+    <div class="titleBox">
+        <br>
+        <img src="./assig_files/assig01.png" alt="" srcset="" style="width: 1000px; margin: auto;">
+        <br>
+        <div class="labNo">
+            Assignment 1        </div>
+        <div class="labNo4">
+            DNS-Resolved SMTP Sender        </div>
+        <br>
+        <div class="labCateg"></div>
+        <div class="labName">
+            <br>Due Date: <br>
+            October 10, 2025 23:55:59            <br><br>
+            <div id="countdown" class="prpl" style="display: block;" data-duedate="October 10, 2025 23:55:59">1d 12h 40m 53s left</div>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <h2>Academic Dishonesty</h2><br>
+        Assignments will be run through similarity-checking software to detect code similar to other students’ submissions. Sharing or copying code is considered plagiarism (<a style="color:yellow" target="_blank" href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/images/AcDishonesty.pdf">Academic Dishonesty</a>) and may result in a mark of 0 and/or a report to the Dean’s Office. Work must be done <b>individually</b>.
+    </div>
+</div>
+
+<section class="pale">
+    <br> 
+    <p>  
+        <i>To save a PDF version, press <a href="javascript:void(0)" onclick="window.print();"> <span class="badge badge-success">Ctrl+p</span> </a> on Windows or <a href="javascript:void(0)" onclick="window.print();"> <span class="badge badge-success">Command+p</span> </a> on Mac, select <span class="badge badge-primary">Save As PDF</span> from the <b>Destination</b> dropdown, and click <span class="badge badge-primary">Save</span>.</i>
+    </p> 
+</section>
+<br>      
+<div class="alert alert-success box-shadow" role="alert">
+    <span style="font-size: 20px; padding: 12px; font-weight: 600;" class="badge badge-warning">This file was last modified on 2025-10-01 4:33 pm ET</span>    <br><br>
+    <h4 style="color: rgb(250, 240, 255); background-color: rgb(236, 10, 30); padding: 10px; text-align: center;"><b>UPDATES and CHANGES</b></h4>
+
+    <br>
+    <h4 style="color: rgb(250, 240, 255); background-color: rgb(236, 10, 30); padding: 10px; text-align: center;"><b>Announcements and Important Notes</b></h4>
+    <section class="pale">
+        <i>Submit exactly one file named <code>solution.py</code>. Incorrect naming (e.g., <code>Solution.py</code>, <code>solution.py.txt</code>) will cause grading errors.</i>
+    </section>
+</div>
+
+<br>
+<div class="menu">
+    <ul>
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#intro"><b>1</b> Introduction</a></li>
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#protocol"><b>2</b> Protocol &amp; Message Structure</a></li>
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#functions"><b>3</b> Functions You Must Implement</a></li>
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#files"><b>4</b> Required File</a></li>
+        <!-- <li><a href="#testing"><b>5</b> Code Testing</a></li> -->
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#marking_guidelines"><b>5</b> Marking Guidelines</a></li>
+        <li><a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#owl"><b>-</b> Assignment Submission</a></li>
+    </ul>
+</div>
+
+<section>
+    <a name="intro"></a>
+    <h1><span class="exNo">1</span> <span class="exName">Introduction</span></h1>
+    <p class="whatToLearn">
+        You’ve probably used Outlook to send and receive school-related emails. 
+        Behind the scenes—familiar mostly to networking geeks like you—Outlook is a user agent (email client) for composing and viewing messages, while the actual sending/receiving/storage is handled by SMTP servers.
+        <br><br>
+        When you compose an email, Outlook hands it to a dedicated SMTP server (e.g., Microsoft Exchange). 
+        That server examines the recipient’s domain and relays the message to the appropriate destination server.
+        The sending SMTP server usually does not know the recipient server’s IP address, but it does know the DNS server’s IP.
+        It first sends a DNS query to resolve the recipient domain’s mail exchanger (MX) host, then resolves that host to an IP address.
+        With the IP in hand, the sending SMTP server delivers the message using SMTP.
+        <br><br>
+        In short, the SMTP sender performs two tasks:
+        </p><ol>
+            <li>Resolve the recipient domain to its MX host, then resolve that host to an IP (via DNS).</li>
+            <li>Send the email to the resolved IP address (via SMTP).</li>
+        </ol>
+        The figure below illustrates this flow, with numbered components. Your task is to implement <b>component 3</b>.
+        The email to be sent is in a file whose path is provided as a command-line argument to your python script ( mimicking how Outlook passes the email file to the SMTP server).
+        <br>
+        <img src="./assig_files/overview.png" alt="" srcset="" style="width: 1000px; margin: auto;">
+        <br><br>
+        In this assignment, you will build the <b>sending functionality</b> of a simplified SMTP server for UWO (<code>@uwo.ca</code>) that delivers mail to another SMTP server.
+        Your SMTP server performs two steps:
+    <p></p>
+    <ol>
+        <li><b>DNS Resolver (UDP, port 1053)</b>: Resolve the recipient domain to its MX host, then resolve that host to an IP.</li>
+        <li><b>Mail Sender (TCP, port 1025)</b>: Connect to the SMTP server and send the message using a minimal dialog.</li>
+    </ol>
+    
+</section>
+
+
+<section>
+    <a name="protocol"></a>
+    <h1><span class="exNo">2</span> <span class="exName">Protocol &amp; Message Structure</span></h1>
+
+    <h3 style="color:#fff; background:#400; padding:6px 10px;">A) DNS (UDP on port 1053)</h3>
+
+
+  <ul style="margin-bottom:8px;">
+    <li><b>Query</b> = <code>ID (1B)</code> + <code>QNAME</code> + <code>QTYPE (1B)</code></li>
+    <li>
+      <b>QNAME</b>: sequence of labels, each as <code>len (1B)</code> + ASCII bytes; terminated by <code>0x00</code> (no dots are sent).
+      <div style="font-size:90%; opacity:.9; margin-top:4px;">
+        <em>Example (QNAME for <code>utoronto.ca</code>):</em> <code>0x08 75 74 6f 72 6f 6e 74 6f 0x02 63 61 0x00</code>
+      </div>
+    </li>
+    <li><b>QTYPE</b>: <code>15</code> (MX) or <code>1</code> (A)</li>
+  </ul>
+
+  <ul>
+    <li><b>Response</b> = <code>ID (1B)</code> + <code>QNAME</code> + <code>QCODE (1B)</code> + <code>ANSWER_LEN (1B)</code> + <code>ANSWER</code></li>
+    <li><b>QCODE</b>: <code>0</code> success, <code>1</code> error (then <code>ANSWER</code> carries an ASCII error string)</li>
+    <li><b>ANSWER</b>:
+      <ul>
+        <li>
+          For <b>MX</b> (<code>QTYPE=15</code>): MX hostname as a label-encoded name (same format as QNAME), ending with <code>0x00</code>.
+          <div style="font-size:90%; opacity:.9; margin-top:4px;">
+            <em>Example (MX hostname <code>smtp.utoronto.ca</code>):</em> <code>0x04 73 6d 74 70 0x08 75 74 6f 72 6f 6e 74 6f 0x02 63 61 0x00</code>
+          </div>
+        </li>
+        <li>
+          For <b>A</b> (<code>QTYPE=1</code>): a 4-byte IPv4 address.
+          <div style="font-size:90%; opacity:.9; margin-top:4px;">
+            <em>Example (IPv4 <code>127.0.0.1</code>):</em> <code>0x7f 0x00 0x00 0x01</code>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+    <br>
+    <img src="./assig_files/dns_query.png" alt="" srcset="" style="width: 300px; margin: auto;">
+    <br>
+    
+    <br>
+    <img src="./assig_files/dns_answer.png" alt="" srcset="" style="width: 300px; margin: auto;">
+    <br>
+    
+    <h3 style="color:#fff; background:#400; padding:6px 10px; margin-top:14px;">B) SMTP (TCP on port 1025)</h3>
+    <ul>
+        <li>Text protocol with <b>newline <code>\n</code></b> line endings (no CRLF needed here).</li>
+        <li>Example dialog (domains are derived from the email addresses you parse) that matches the below email file:</li>
+    </ul>
+    <pre><code>
+        S: 220 lakeheadu.ca
+        C: HELO uwo.ca
+        S: 250 Hello uwo.ca, pleased to meet you
+        C: MAIL FROM: alice@uwo.ca
+        S: 250 alice@uwo.ca ... Sender ok
+        C: RCPT TO: bob@lakeheadu.ca
+        S: 250 bob@lakeheadu.ca ... Recipient ok
+        C: DATA
+        S: 354 Enter mail, end with "." on a line by itself
+        C: This is the body. 
+        C: with multiple lines. 
+        C: .
+        S: 250 Message accepted for delivery
+        C: QUIT
+        S: 221 &lt;recv_domain&gt; closing connection
+    </code></pre>
+    <ul>
+        <li><b>HELO</b> uses your sender’s domain (e.g., <code>uwo.ca</code>) extracted from the sender’s email address which is found in the email file.</li>
+        <li><b>DATA</b>: send the body, then a single dot <code>.</code> on its own line.</li>
+        
+        <li>An example email file is shown below.</li>
+        <br>
+        <img src="./assig_files/email_file.png" alt="" srcset="" style="width: 200px; margin: auto;">
+        <br>
+        
+        
+    </ul>
+    </section>
+    
+    <section>
+        <a name="functions"></a>
+        <h1><span class="exNo">3</span> <span class="exName">Functions You Must Implement</span></h1>
+    <p>Implement the following functions in <code>solution.py</code>. The bodies are removed in the template below—replace each <code>raise NotImplementedError</code> with your code.</p>
+    <ul>
+        <li><code>parse_email(file_path) -&gt; (sender, recipient, subject, body)</code>
+            <ul>
+                <li>Read the email file, parse headers and body. Validate that sender/recipient look like <code>user@domain</code>.</li>
+                <li>Return a tuple of strings: (sender, recipient, subject, body).</li>
+            </ul>
+        </li>
+        <li><code>build_dns_query(id, domain, qtype) -&gt; bytes</code>
+            <ul><li>Construct <b>ID(1)</b> + <b>QNAME</b> + <b>QTYPE(1)</b> according to the simplified spec above.</li></ul>
+        </li>
+        <li><code>send_dns_query(dns_ip, query) -&gt; bytes</code>
+            <ul><li>Send UDP to <code>(dns_ip, 1053)</code>, return the raw response bytes</li></ul>
+        </li>
+        <li><code>parse_dns_response(response, expected_id, qtype) -&gt; str</code>
+            <ul>
+                <li>Validate <b>ID</b> and <b>QCODE</b>, then return:
+                    <ul>
+                        <li>MX: decoded hostname (e.g., <code>smtp.utoronto.ca</code>)</li>
+                        <li>A: IPv4 string (e.g., <code>127.0.0.1</code>)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><code>send_smtp_email(ip, sender, recipient, subject, body) -&gt; None</code>
+            <ul><li>Perform the minimal SMTP dialog over TCP to <code>(ip, 1025)</code>, using <code>\n</code> line endings.</li></ul>
+        </li>
+    </ul>
+
+    <h3>Provided <code>solution.py</code> Template (fill in the TODOs)</h3>
+    <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> socket
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">parse_email</span><span class="token punctuation">(</span>file_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    TODO: Read file and return (sender, recipient, subject, body).
+    Validate that sender and recipient include '@'.
+    On any parsing/validation error, raise SystemExit(1).
+    """</span>
+    <span class="token keyword">raise</span> NotImplementedError
+
+<span class="token keyword">def</span> <span class="token function">build_dns_query</span><span class="token punctuation">(</span><span class="token builtin">id</span><span class="token punctuation">,</span> domain<span class="token punctuation">,</span> qtype<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    TODO: Build bytes: ID(1) + QNAME + QTYPE(1)
+    QNAME = label_len(1) + label_bytes ... + 0x00
+    """</span>
+    <span class="token keyword">raise</span> NotImplementedError
+
+<span class="token keyword">def</span> <span class="token function">send_dns_query</span><span class="token punctuation">(</span>dns_ip<span class="token punctuation">,</span> query<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    TODO: Send UDP to (dns_ip, 1053), return response bytes (use timeout).
+    On error or timeout, raise SystemExit(1).
+    """</span>
+    <span class="token keyword">raise</span> NotImplementedError
+
+<span class="token keyword">def</span> <span class="token function">parse_dns_response</span><span class="token punctuation">(</span>response<span class="token punctuation">,</span> expected_id<span class="token punctuation">,</span> qtype<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    TODO: Validate response[0] == expected_id, parse QNAME echo,
+    read QCODE (0 success / 1 error), then ANSWER_LEN(1) and ANSWER.
+    For MX (qtype=15): ANSWER is label-encoded hostname ending with 0x00.
+    For A  (qtype=1):  ANSWER is 4 bytes IPv4. Return 'a.b.c.d'.
+    On any error, raise SystemExit(1).
+    """</span>
+    <span class="token keyword">raise</span> NotImplementedError
+
+<span class="token keyword">def</span> <span class="token function">send_smtp_email</span><span class="token punctuation">(</span>ip<span class="token punctuation">,</span> sender<span class="token punctuation">,</span> recipient<span class="token punctuation">,</span> subject<span class="token punctuation">,</span> body<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    TODO: Connect TCP to (ip, 1025). Exchange lines with '\\n' endings:
+      - read '220 ...'
+      - send 'HELO &lt;send_domain&gt;'
+      - 'MAIL FROM: &lt;sender&gt;'
+      - 'RCPT TO: &lt;recipient&gt;'
+      - 'DATA' then body, '.', expect '250'
+      - 'QUIT', expect '221'
+    On any error, raise SystemExit(1).
+    """</span>
+    <span class="token keyword">raise</span> NotImplementedError
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment"># Accept either: script email_file  OR script email_file dns_ip</span>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span> <span class="token keyword">not</span> <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">raise</span> SystemExit<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    file_path <span class="token operator">=</span> sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+    dns_ip <span class="token operator">=</span> sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">2</span> <span class="token keyword">else</span> <span class="token string">'127.0.0.1'</span>
+
+    sender<span class="token punctuation">,</span> recipient<span class="token punctuation">,</span> subject<span class="token punctuation">,</span> body <span class="token operator">=</span> parse_email<span class="token punctuation">(</span>file_path<span class="token punctuation">)</span>
+    domain <span class="token operator">=</span> recipient<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'@'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+    mx_query <span class="token operator">=</span> build_dns_query<span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">,</span> domain<span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span>    <span class="token comment"># MX</span>
+    mx_response <span class="token operator">=</span> send_dns_query<span class="token punctuation">(</span>dns_ip<span class="token punctuation">,</span> mx_query<span class="token punctuation">)</span>
+    mx_host <span class="token operator">=</span> parse_dns_response<span class="token punctuation">(</span>mx_response<span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span>
+
+    a_query <span class="token operator">=</span> build_dns_query<span class="token punctuation">(</span><span class="token number">19</span><span class="token punctuation">,</span> mx_host<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>     <span class="token comment"># A</span>
+    a_response <span class="token operator">=</span> send_dns_query<span class="token punctuation">(</span>dns_ip<span class="token punctuation">,</span> a_query<span class="token punctuation">)</span>
+    ip <span class="token operator">=</span> parse_dns_response<span class="token punctuation">(</span>a_response<span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+    send_smtp_email<span class="token punctuation">(</span>ip<span class="token punctuation">,</span> sender<span class="token punctuation">,</span> recipient<span class="token punctuation">,</span> subject<span class="token punctuation">,</span> body<span class="token punctuation">)</span>
+</code></pre>
+</section>
+
+<section>
+    <a name="files"></a>
+    <h1><span class="exNo">4</span> <span class="exName">Required File</span></h1>
+    <p class="whatToLearn">
+        Submit a single Python file named <badge class="badge badge-warning">solution.py</badge>.
+    </p>
+    <h3>Requirements</h3>
+    <ul>
+        <li><b>File Name</b>: Exactly <code>solution.py</code>.</li>
+        <li><b>Arguments</b>:
+            <ul>
+                <li><code>python3 solution.py &lt;email_file&gt;</code></li>
+                <li>Optional: <code>python3 solution.py &lt;email_file&gt; &lt;dns_ip&gt;</code> (defaults to <code>127.0.0.1</code>).</li>
+            </ul>
+        </li>
+        <li><b>Allowed Modules</b>: <code>socket</code>, <code>sys</code>, <code>time</code>, <code>os</code>. Avoid extra dependencies.</li>
+        <li><b>Email File Format</b>:
+<pre><code>From: alice@uwo.ca
+To: bob@utoronto.ca
+Subject: Test Email
+
+This is the body.
+With multiple lines.</code></pre>
+        </li>
+        <li><b>Error Handling</b>: On any error (file, DNS, SMTP), exit with code <code>1</code> via <code>raise SystemExit(1)</code>.</li>
+    </ul>
+</section>
+
+<!-- <section>
+    <a name="testing"></a>
+    <h1><span class="exNo">5</span> <span class="exName">Code Testing</span></h1>
+    <p class="whatToLearn">
+        The autograder runs multiple email cases and checks the server log for correct dialogs.
+    </p>
+    <h3>Test Locally</h3>
+    <ul>
+        <li>Run the provided <code>DNS</code> (UDP, 1053) and <code>SMTP</code> (TCP, 1025) servers (as supplied in the starter archive).</li>
+        <li>Execute: <code>python3 solution.py email.txt</code></li>
+        <li>Verify that the SMTP server log shows the expected HELO/MAIL/RCPT/DATA/QUIT sequence and that MX→A resolution was used.</li>
+    </ul>
+</section> -->
+
+<section>
+    <a name="marking_guidelines"></a>
+    <h1><span class="exNo">5</span> <span class="exName">Marking Guidelines</span></h1>
+    <p>The assignment is worth 100 points distributed over 10 test cases (10 points each). </p>
+    <p>Each test case tests query construction, response validation, label parsing, dialog sequencing, correct line endings, and handling of server replies.</p>
+
+    <!-- <div class="alert alert-danger" role="alert">
+        <h2 style="color: rgb(178, 82, 195);">Remember!</h2><br>
+        The assignment is worth <b>5%</b> of the course mark. Timeout: 30 seconds per test.
+    </div> -->
+</section>
+
+<section>
+    <a name="owl"></a>
+    <h1><span class="exNo">-</span> <span class="exName">Assignment Submission</span></h1>
+    <div class="alert alert-danger" role="alert">
+        <h2 style="color: rgb(178, 82, 195);">Remember!</h2><br>
+        <ul>
+            <li>Submit only <code>solution.py</code> to Gradescope.</li>
+            <li>Email submissions are not accepted.</li>
+            <li>Multiple submissions allowed; last one is graded. Late penalties apply.</li>
+        </ul>
+    </div>
+    <ol>
+        <li>Submit one file: <badge class="badge badge-warning">solution.py</badge></li>
+        <li>Submit via <a href="https://www.gradescope.ca/courses/30848" target="_blank" rel="noopener noreferrer">Gradescope Assignment-1 page</a>.</li>
+    </ol>
+</section>
+   
+
+    <a href="https://csd.uwo.ca/~ggad/assig_24/cs3357/assignment_php/assig.php?assigNo=01#top" class="top">TOP</a>
+
+
+    <script src="./assig_files/clipboard.min.js.download"></script>
+    <script src="./assig_files/prism.js.download"></script>
+    <script src="./assig_files/myscript.js.download"></script>
+    </div>
+    </div>
+    
+
+    </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

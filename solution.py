@@ -1,7 +1,5 @@
 import socket
-import os
 import sys
-import time
 
 def parse_email(file_path):
     """
